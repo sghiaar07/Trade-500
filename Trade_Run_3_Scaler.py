@@ -51,8 +51,9 @@ import requests as http
 # =============================================================
 #   !! PASTE YOUR ALPACA PAPER TRADING KEYS HERE !!
 # =============================================================
-ALPACA_API_KEY    = "PKPD3AKLRTHYR25VUYAX7YD4SI"
-ALPACA_SECRET_KEY = "DRVrLLaFLquN23TB1bDgRer1ruEkYpZtmihmEsxX6BAy"
+import os
+ALPACA_API_KEY    = os.environ.get("ALPACA_API_KEY", "")
+ALPACA_SECRET_KEY = os.environ.get("ALPACA_SECRET_KEY", "")
 
 # =============================================================
 #   BASE SETTINGS
